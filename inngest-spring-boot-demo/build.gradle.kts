@@ -36,3 +36,7 @@ dependencyManagement {
         }
     }
 }
+
+tasks.create("stage") {
+    dependsOn("build")
+}
